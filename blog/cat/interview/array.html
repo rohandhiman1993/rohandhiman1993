@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Array | CodingDais</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="Big 0">
+    
+    <link rel="preload" href="/assets/css/0.styles.170a9fe0.css" as="style"><link rel="preload" href="/assets/js/app.84d49489.js" as="script"><link rel="preload" href="/assets/js/2.687c71a6.js" as="script"><link rel="preload" href="/assets/js/1.fc8a768a.js" as="script"><link rel="preload" href="/assets/js/38.73812df0.js" as="script"><link rel="prefetch" href="/assets/js/10.60b29b94.js"><link rel="prefetch" href="/assets/js/100.d567390a.js"><link rel="prefetch" href="/assets/js/101.48e3f8ad.js"><link rel="prefetch" href="/assets/js/102.43b11ccd.js"><link rel="prefetch" href="/assets/js/103.1f528357.js"><link rel="prefetch" href="/assets/js/104.c3797aad.js"><link rel="prefetch" href="/assets/js/105.b17ddba4.js"><link rel="prefetch" href="/assets/js/106.4659b390.js"><link rel="prefetch" href="/assets/js/107.76e3cbb1.js"><link rel="prefetch" href="/assets/js/108.b4011246.js"><link rel="prefetch" href="/assets/js/109.9ff63e61.js"><link rel="prefetch" href="/assets/js/11.0921a871.js"><link rel="prefetch" href="/assets/js/110.ba38798d.js"><link rel="prefetch" href="/assets/js/111.c4face8d.js"><link rel="prefetch" href="/assets/js/112.d8294680.js"><link rel="prefetch" href="/assets/js/113.37167c71.js"><link rel="prefetch" href="/assets/js/114.fa063230.js"><link rel="prefetch" href="/assets/js/115.c4529ae1.js"><link rel="prefetch" href="/assets/js/116.a8ed84fc.js"><link rel="prefetch" href="/assets/js/117.9526e722.js"><link rel="prefetch" href="/assets/js/118.612c0da5.js"><link rel="prefetch" href="/assets/js/119.b8799c63.js"><link rel="prefetch" href="/assets/js/12.4ef9a524.js"><link rel="prefetch" href="/assets/js/120.038d139d.js"><link rel="prefetch" href="/assets/js/121.cfe400dd.js"><link rel="prefetch" href="/assets/js/122.5911d49b.js"><link rel="prefetch" href="/assets/js/123.95168e91.js"><link rel="prefetch" href="/assets/js/124.38d74ed0.js"><link rel="prefetch" href="/assets/js/125.2ac70e27.js"><link rel="prefetch" href="/assets/js/126.c5cbe2d4.js"><link rel="prefetch" href="/assets/js/127.a0429b64.js"><link rel="prefetch" href="/assets/js/128.3e61bbf9.js"><link rel="prefetch" href="/assets/js/129.70bb0790.js"><link rel="prefetch" href="/assets/js/13.8c65a56a.js"><link rel="prefetch" href="/assets/js/130.d76c48ac.js"><link rel="prefetch" href="/assets/js/131.8da5deba.js"><link rel="prefetch" href="/assets/js/132.2f6665bb.js"><link rel="prefetch" href="/assets/js/133.fe96814d.js"><link rel="prefetch" href="/assets/js/134.a290d43f.js"><link rel="prefetch" href="/assets/js/135.7aff7c08.js"><link rel="prefetch" href="/assets/js/136.af92c403.js"><link rel="prefetch" href="/assets/js/137.b953a14e.js"><link rel="prefetch" href="/assets/js/138.873768d2.js"><link rel="prefetch" href="/assets/js/139.dfc29bcb.js"><link rel="prefetch" href="/assets/js/14.e8b58c15.js"><link rel="prefetch" href="/assets/js/140.81157865.js"><link rel="prefetch" href="/assets/js/141.85c6cfb9.js"><link rel="prefetch" href="/assets/js/142.5a4da4e7.js"><link rel="prefetch" href="/assets/js/143.421db39e.js"><link rel="prefetch" href="/assets/js/144.a9d5101a.js"><link rel="prefetch" href="/assets/js/145.2431b05a.js"><link rel="prefetch" href="/assets/js/146.07d1415b.js"><link rel="prefetch" href="/assets/js/147.59a95999.js"><link rel="prefetch" href="/assets/js/148.998a9c91.js"><link rel="prefetch" href="/assets/js/149.838cc65d.js"><link rel="prefetch" href="/assets/js/15.58576da3.js"><link rel="prefetch" href="/assets/js/150.3c8b32da.js"><link rel="prefetch" href="/assets/js/151.4410d5e1.js"><link rel="prefetch" href="/assets/js/152.c3bb19db.js"><link rel="prefetch" href="/assets/js/153.0ec931c9.js"><link rel="prefetch" href="/assets/js/154.37b452e5.js"><link rel="prefetch" href="/assets/js/16.295fa0e8.js"><link rel="prefetch" href="/assets/js/17.fd550f40.js"><link rel="prefetch" href="/assets/js/18.f6ff2228.js"><link rel="prefetch" href="/assets/js/19.92f5cd3c.js"><link rel="prefetch" href="/assets/js/20.1211d94e.js"><link rel="prefetch" href="/assets/js/21.ff069fa7.js"><link rel="prefetch" href="/assets/js/22.3988e024.js"><link rel="prefetch" href="/assets/js/23.6d93e3e2.js"><link rel="prefetch" href="/assets/js/24.9a41c28e.js"><link rel="prefetch" href="/assets/js/25.bf7c947e.js"><link rel="prefetch" href="/assets/js/26.9678f5db.js"><link rel="prefetch" href="/assets/js/27.3a36bc5b.js"><link rel="prefetch" href="/assets/js/28.d43f1f31.js"><link rel="prefetch" href="/assets/js/29.9eeb8a53.js"><link rel="prefetch" href="/assets/js/3.33514a70.js"><link rel="prefetch" href="/assets/js/30.73a4a261.js"><link rel="prefetch" href="/assets/js/31.8eea5794.js"><link rel="prefetch" href="/assets/js/32.db7132fa.js"><link rel="prefetch" href="/assets/js/33.b8c8936a.js"><link rel="prefetch" href="/assets/js/34.ab430e43.js"><link rel="prefetch" href="/assets/js/35.8e2fc096.js"><link rel="prefetch" href="/assets/js/36.b878fa79.js"><link rel="prefetch" href="/assets/js/37.a5d7f27b.js"><link rel="prefetch" href="/assets/js/39.9643ed7d.js"><link rel="prefetch" href="/assets/js/4.3f408848.js"><link rel="prefetch" href="/assets/js/40.0603670f.js"><link rel="prefetch" href="/assets/js/41.db3fcb03.js"><link rel="prefetch" href="/assets/js/42.1b824573.js"><link rel="prefetch" href="/assets/js/43.2b073044.js"><link rel="prefetch" href="/assets/js/44.0c6f5450.js"><link rel="prefetch" href="/assets/js/45.ea1b10a1.js"><link rel="prefetch" href="/assets/js/46.8b9032f4.js"><link rel="prefetch" href="/assets/js/47.f80a6678.js"><link rel="prefetch" href="/assets/js/48.7be6e7d2.js"><link rel="prefetch" href="/assets/js/49.9a4f8f2e.js"><link rel="prefetch" href="/assets/js/5.5cb44e85.js"><link rel="prefetch" href="/assets/js/50.c31c4718.js"><link rel="prefetch" href="/assets/js/51.fbc5dbc0.js"><link rel="prefetch" href="/assets/js/52.d404153f.js"><link rel="prefetch" href="/assets/js/53.36d6b65a.js"><link rel="prefetch" href="/assets/js/54.e8193f46.js"><link rel="prefetch" href="/assets/js/55.bc9e5a15.js"><link rel="prefetch" href="/assets/js/56.c61f1bc8.js"><link rel="prefetch" href="/assets/js/57.42ce875b.js"><link rel="prefetch" href="/assets/js/58.555cbd61.js"><link rel="prefetch" href="/assets/js/59.f438b893.js"><link rel="prefetch" href="/assets/js/6.00b8267b.js"><link rel="prefetch" href="/assets/js/60.bf1f44e5.js"><link rel="prefetch" href="/assets/js/61.058322d7.js"><link rel="prefetch" href="/assets/js/62.3305ddd1.js"><link rel="prefetch" href="/assets/js/63.1a21c891.js"><link rel="prefetch" href="/assets/js/64.58ef0aa9.js"><link rel="prefetch" href="/assets/js/65.1a6692c8.js"><link rel="prefetch" href="/assets/js/66.0f9e1539.js"><link rel="prefetch" href="/assets/js/67.5b7ea4a1.js"><link rel="prefetch" href="/assets/js/68.e1849aed.js"><link rel="prefetch" href="/assets/js/69.688c6c2d.js"><link rel="prefetch" href="/assets/js/7.5b9b1097.js"><link rel="prefetch" href="/assets/js/70.ee1431b8.js"><link rel="prefetch" href="/assets/js/71.3ed5ac1e.js"><link rel="prefetch" href="/assets/js/72.ebbdaf1e.js"><link rel="prefetch" href="/assets/js/73.d9db0ab2.js"><link rel="prefetch" href="/assets/js/74.c795db4d.js"><link rel="prefetch" href="/assets/js/75.31c1227b.js"><link rel="prefetch" href="/assets/js/76.5f9a7c2e.js"><link rel="prefetch" href="/assets/js/77.47816ec7.js"><link rel="prefetch" href="/assets/js/78.33cadcaf.js"><link rel="prefetch" href="/assets/js/79.5d590a37.js"><link rel="prefetch" href="/assets/js/80.e7b50a50.js"><link rel="prefetch" href="/assets/js/81.0f053796.js"><link rel="prefetch" href="/assets/js/82.30e92d1c.js"><link rel="prefetch" href="/assets/js/83.67d69821.js"><link rel="prefetch" href="/assets/js/84.9dc9c337.js"><link rel="prefetch" href="/assets/js/85.a8cd1b7e.js"><link rel="prefetch" href="/assets/js/86.03bbfdf9.js"><link rel="prefetch" href="/assets/js/87.8d12d75a.js"><link rel="prefetch" href="/assets/js/88.a83a31e0.js"><link rel="prefetch" href="/assets/js/89.87dc01a8.js"><link rel="prefetch" href="/assets/js/90.b2759641.js"><link rel="prefetch" href="/assets/js/91.f71f19bd.js"><link rel="prefetch" href="/assets/js/92.d942b353.js"><link rel="prefetch" href="/assets/js/93.1d8ac7b6.js"><link rel="prefetch" href="/assets/js/94.e886976b.js"><link rel="prefetch" href="/assets/js/95.db5217d6.js"><link rel="prefetch" href="/assets/js/96.7dcd961f.js"><link rel="prefetch" href="/assets/js/97.4d272691.js"><link rel="prefetch" href="/assets/js/98.7f84af86.js"><link rel="prefetch" href="/assets/js/99.c80fc6a5.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.9b93fcb7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.170a9fe0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container single-article"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CodingDais</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/ts/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li><li class="dropdown-item"><!----> <a href="/tools/linux.html" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/resume/" class="nav-link">
+  Contact
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/ts/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li><li class="dropdown-item"><!----> <a href="/tools/linux.html" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/resume/" class="nav-link">
+  Contact
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Array</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/cat/interview/array.html#what-is-map" class="sidebar-link">What is map()?</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/cat/interview/array.html#what-filter-is" class="sidebar-link">what filter is</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/cat/interview/array.html#reducer" class="sidebar-link">reducer</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/cat/interview/array.html#polyfill-for-map" class="sidebar-link">Polyfill for map();</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/cat/interview/array.html#polyfill-for-filter" class="sidebar-link">Polyfill for filter</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/cat/interview/array.html#polyfill-for-reduce" class="sidebar-link">Polyfill for reduce()</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/cat/interview/array.html#map-vs-foreach" class="sidebar-link">Map vs forEach</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/cat/interview/array.html#output-quiz" class="sidebar-link">Output Quiz</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="what-is-map"><a href="#what-is-map" class="header-anchor">#</a> What is map()?</h2> <p>The map method is used for creating a new array from existing one by applying a function to each one of the element.</p> <ul><li><p>i want to multiple each of these elements by 5 and return new array</p></li> <li><p>map function takes a callback function</p></li> <li><p>this function take three things first is the current element second will be index third will be actual array.</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>
+
+<span class="token keyword">const</span> multipleThree <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">num<span class="token punctuation">,</span> ind<span class="token punctuation">,</span> arr</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>multipleThree<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//  [3, 6, 9, 12]</span>
+
+<span class="token keyword">const</span> multipleThreeWithIndexPlus <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">num<span class="token punctuation">,</span> ind<span class="token punctuation">,</span> arr</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num <span class="token operator">*</span> <span class="token number">3</span> <span class="token operator">+</span> ind<span class="token punctuation">;</span> <span class="token comment">// ind first 0</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>multipleThreeWithIndexPlus<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [3, 7, 11, 15]</span>
+
+</code></pre></div><h2 id="what-filter-is"><a href="#what-filter-is" class="header-anchor">#</a> what filter is</h2> <p>The filter method takes each element in an array and it applies a conditional statement against it if the conditional return true the element gets pushed into the output array if the condition returns false the element does not get pushed into the output array in short filter returns only those elements from the array which fulfills the provided criteria.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> numbs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> moreThanTwo <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num <span class="token operator">&gt;</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>moreThanTwo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// only deference map and filter </span>
+<span class="token comment">// filter return true and false </span>
+
+</code></pre></div><h2 id="reducer"><a href="#reducer" class="header-anchor">#</a> reducer</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> nums  <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// acc mean previews value sum</span>
+<span class="token keyword">const</span> sum <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> curr<span class="token punctuation">,</span> i<span class="token punctuation">,</span> arr</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> sum <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> curr<span class="token punctuation">,</span> i<span class="token punctuation">,</span> arr</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> acc<span class="token operator">+</span> curr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><h2 id="polyfill-for-map"><a href="#polyfill-for-map" class="header-anchor">#</a> Polyfill for map();</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Array.map((num, i, arr) =&gt; {})</span>
+
+<span class="token comment">// custom map function</span>
+<span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">myMap</span><span class="token operator">=</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> temp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        temp<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">cb</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="polyfill-for-filter"><a href="#polyfill-for-filter" class="header-anchor">#</a> Polyfill for filter</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">myFilter</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> temp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">cb</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        temp<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+       <span class="token punctuation">}</span>
+        
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+</code></pre></div><h2 id="polyfill-for-reduce"><a href="#polyfill-for-reduce" class="header-anchor">#</a> Polyfill for reduce()</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// arr.reduce((),{}, initialvalue)</span>
+
+<span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">myReduce</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">cb<span class="token punctuation">,</span> initialValue</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> accumulator <span class="token operator">=</span> initialValue<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        accumulator <span class="token operator">=</span> accumulator<span class="token operator">?</span><span class="token function">cb</span><span class="token punctuation">(</span>accumulator<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>i<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> accumulator<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h2 id="map-vs-foreach"><a href="#map-vs-foreach" class="header-anchor">#</a> Map vs forEach</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// this return new array</span>
+arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> ar <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// this will  not return anything like map</span>
+arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">ar</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> ar <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// modify original array only foreach </span>
+arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">ar<span class="token punctuation">,</span> i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> ar <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span> <span class="token comment">// [4, 7, 5, 7, 9]</span>
+
+arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">ar<span class="token punctuation">,</span> i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> ar <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// will not work because this is not returning anything.</span>
+</code></pre></div><h2 id="output-quiz"><a href="#output-quiz" class="header-anchor">#</a> Output Quiz</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Return only name of students in capital</span>
+
+
+<span class="token keyword">let</span> students <span class="token operator">=</span> <span class="token punctuation">[</span>
+<span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;rohan&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">rollNumber</span><span class="token operator">:</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token literal-property property">marks</span><span class="token operator">:</span><span class="token number">44</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;suny&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">rollNumber</span><span class="token operator">:</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token literal-property property">marks</span><span class="token operator">:</span><span class="token number">76</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;askhita&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">rollNumber</span><span class="token operator">:</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token literal-property property">marks</span><span class="token operator">:</span><span class="token number">34</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;nikhil&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">rollNumber</span><span class="token operator">:</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token literal-property property">marks</span><span class="token operator">:</span><span class="token number">66</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">]</span>
+
+
+<span class="token keyword">let</span> names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> students<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    names<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>students<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>names<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ['ROHAN', 'ROHAN', 'ROHAN', 'ROHAN']</span>
+
+<span class="token keyword">const</span> names <span class="token operator">=</span> students<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">stu</span> <span class="token operator">=&gt;</span> stu<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>names<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">/// return only details of those who scored more than 60 marks</span>
+
+<span class="token keyword">const</span> details <span class="token operator">=</span> students<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">stu</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> stu<span class="token punctuation">.</span>marks <span class="token operator">&gt;</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// sum of marks of all students </span>
+
+<span class="token keyword">const</span> score <span class="token operator">=</span> students<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> cur</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> acc <span class="token operator">+</span> cur<span class="token punctuation">.</span>marks<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// return only names of students who scored more than 60</span>
+
+names <span class="token operator">=</span> students<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">stu</span> <span class="token operator">=&gt;</span> stu<span class="token punctuation">.</span>marks <span class="token operator">&gt;</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">stu</span> <span class="token operator">=&gt;</span> stu<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+
+
+<span class="token comment">// </span>
+
+<span class="token keyword">const</span> totalMarks <span class="token operator">=</span> students<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">stu</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>stu<span class="token punctuation">.</span>marks <span class="token operator">&lt;</span> <span class="token number">60</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        stu<span class="token punctuation">.</span>marks <span class="token operator">+=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> stu<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">stu</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> stu<span class="token punctuation">.</span>marks <span class="token operator">&gt;</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">.</span>
+<span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> curr</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> acc <span class="token operator">+</span> curr<span class="token punctuation">.</span>marks<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>totalMarks<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h1 id="function"><a href="#function" class="header-anchor">#</a> Function</h1> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">function</span> <span class="token function">square</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num <span class="token operator">*</span> num<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.84d49489.js" defer></script><script src="/assets/js/2.687c71a6.js" defer></script><script src="/assets/js/1.fc8a768a.js" defer></script><script src="/assets/js/38.73812df0.js" defer></script>
+  </body>
+</html>

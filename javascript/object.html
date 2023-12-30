@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Object in js for one user | CodingDais</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="Coding Dais is the best online web, mobile, game development, and programming tutorials for all of the latest web, mobile, game technologies including Node.js, Angular, React.js, Vue.js, Laravel, Django, Spring Boot, Php, Python, Javascript, Java, C# and much more">
+    
+    <link rel="preload" href="/assets/css/0.styles.170a9fe0.css" as="style"><link rel="preload" href="/assets/js/app.84d49489.js" as="script"><link rel="preload" href="/assets/js/2.687c71a6.js" as="script"><link rel="preload" href="/assets/js/1.fc8a768a.js" as="script"><link rel="preload" href="/assets/js/93.1d8ac7b6.js" as="script"><link rel="prefetch" href="/assets/js/10.60b29b94.js"><link rel="prefetch" href="/assets/js/100.d567390a.js"><link rel="prefetch" href="/assets/js/101.48e3f8ad.js"><link rel="prefetch" href="/assets/js/102.43b11ccd.js"><link rel="prefetch" href="/assets/js/103.1f528357.js"><link rel="prefetch" href="/assets/js/104.c3797aad.js"><link rel="prefetch" href="/assets/js/105.b17ddba4.js"><link rel="prefetch" href="/assets/js/106.4659b390.js"><link rel="prefetch" href="/assets/js/107.76e3cbb1.js"><link rel="prefetch" href="/assets/js/108.b4011246.js"><link rel="prefetch" href="/assets/js/109.9ff63e61.js"><link rel="prefetch" href="/assets/js/11.0921a871.js"><link rel="prefetch" href="/assets/js/110.ba38798d.js"><link rel="prefetch" href="/assets/js/111.c4face8d.js"><link rel="prefetch" href="/assets/js/112.d8294680.js"><link rel="prefetch" href="/assets/js/113.37167c71.js"><link rel="prefetch" href="/assets/js/114.fa063230.js"><link rel="prefetch" href="/assets/js/115.c4529ae1.js"><link rel="prefetch" href="/assets/js/116.a8ed84fc.js"><link rel="prefetch" href="/assets/js/117.9526e722.js"><link rel="prefetch" href="/assets/js/118.612c0da5.js"><link rel="prefetch" href="/assets/js/119.b8799c63.js"><link rel="prefetch" href="/assets/js/12.4ef9a524.js"><link rel="prefetch" href="/assets/js/120.038d139d.js"><link rel="prefetch" href="/assets/js/121.cfe400dd.js"><link rel="prefetch" href="/assets/js/122.5911d49b.js"><link rel="prefetch" href="/assets/js/123.95168e91.js"><link rel="prefetch" href="/assets/js/124.38d74ed0.js"><link rel="prefetch" href="/assets/js/125.2ac70e27.js"><link rel="prefetch" href="/assets/js/126.c5cbe2d4.js"><link rel="prefetch" href="/assets/js/127.a0429b64.js"><link rel="prefetch" href="/assets/js/128.3e61bbf9.js"><link rel="prefetch" href="/assets/js/129.70bb0790.js"><link rel="prefetch" href="/assets/js/13.8c65a56a.js"><link rel="prefetch" href="/assets/js/130.d76c48ac.js"><link rel="prefetch" href="/assets/js/131.8da5deba.js"><link rel="prefetch" href="/assets/js/132.2f6665bb.js"><link rel="prefetch" href="/assets/js/133.fe96814d.js"><link rel="prefetch" href="/assets/js/134.a290d43f.js"><link rel="prefetch" href="/assets/js/135.7aff7c08.js"><link rel="prefetch" href="/assets/js/136.af92c403.js"><link rel="prefetch" href="/assets/js/137.b953a14e.js"><link rel="prefetch" href="/assets/js/138.873768d2.js"><link rel="prefetch" href="/assets/js/139.dfc29bcb.js"><link rel="prefetch" href="/assets/js/14.e8b58c15.js"><link rel="prefetch" href="/assets/js/140.81157865.js"><link rel="prefetch" href="/assets/js/141.85c6cfb9.js"><link rel="prefetch" href="/assets/js/142.5a4da4e7.js"><link rel="prefetch" href="/assets/js/143.421db39e.js"><link rel="prefetch" href="/assets/js/144.a9d5101a.js"><link rel="prefetch" href="/assets/js/145.2431b05a.js"><link rel="prefetch" href="/assets/js/146.07d1415b.js"><link rel="prefetch" href="/assets/js/147.59a95999.js"><link rel="prefetch" href="/assets/js/148.998a9c91.js"><link rel="prefetch" href="/assets/js/149.838cc65d.js"><link rel="prefetch" href="/assets/js/15.58576da3.js"><link rel="prefetch" href="/assets/js/150.3c8b32da.js"><link rel="prefetch" href="/assets/js/151.4410d5e1.js"><link rel="prefetch" href="/assets/js/152.c3bb19db.js"><link rel="prefetch" href="/assets/js/153.0ec931c9.js"><link rel="prefetch" href="/assets/js/154.37b452e5.js"><link rel="prefetch" href="/assets/js/16.295fa0e8.js"><link rel="prefetch" href="/assets/js/17.fd550f40.js"><link rel="prefetch" href="/assets/js/18.f6ff2228.js"><link rel="prefetch" href="/assets/js/19.92f5cd3c.js"><link rel="prefetch" href="/assets/js/20.1211d94e.js"><link rel="prefetch" href="/assets/js/21.ff069fa7.js"><link rel="prefetch" href="/assets/js/22.3988e024.js"><link rel="prefetch" href="/assets/js/23.6d93e3e2.js"><link rel="prefetch" href="/assets/js/24.9a41c28e.js"><link rel="prefetch" href="/assets/js/25.bf7c947e.js"><link rel="prefetch" href="/assets/js/26.9678f5db.js"><link rel="prefetch" href="/assets/js/27.3a36bc5b.js"><link rel="prefetch" href="/assets/js/28.d43f1f31.js"><link rel="prefetch" href="/assets/js/29.9eeb8a53.js"><link rel="prefetch" href="/assets/js/3.33514a70.js"><link rel="prefetch" href="/assets/js/30.73a4a261.js"><link rel="prefetch" href="/assets/js/31.8eea5794.js"><link rel="prefetch" href="/assets/js/32.db7132fa.js"><link rel="prefetch" href="/assets/js/33.b8c8936a.js"><link rel="prefetch" href="/assets/js/34.ab430e43.js"><link rel="prefetch" href="/assets/js/35.8e2fc096.js"><link rel="prefetch" href="/assets/js/36.b878fa79.js"><link rel="prefetch" href="/assets/js/37.a5d7f27b.js"><link rel="prefetch" href="/assets/js/38.73812df0.js"><link rel="prefetch" href="/assets/js/39.9643ed7d.js"><link rel="prefetch" href="/assets/js/4.3f408848.js"><link rel="prefetch" href="/assets/js/40.0603670f.js"><link rel="prefetch" href="/assets/js/41.db3fcb03.js"><link rel="prefetch" href="/assets/js/42.1b824573.js"><link rel="prefetch" href="/assets/js/43.2b073044.js"><link rel="prefetch" href="/assets/js/44.0c6f5450.js"><link rel="prefetch" href="/assets/js/45.ea1b10a1.js"><link rel="prefetch" href="/assets/js/46.8b9032f4.js"><link rel="prefetch" href="/assets/js/47.f80a6678.js"><link rel="prefetch" href="/assets/js/48.7be6e7d2.js"><link rel="prefetch" href="/assets/js/49.9a4f8f2e.js"><link rel="prefetch" href="/assets/js/5.5cb44e85.js"><link rel="prefetch" href="/assets/js/50.c31c4718.js"><link rel="prefetch" href="/assets/js/51.fbc5dbc0.js"><link rel="prefetch" href="/assets/js/52.d404153f.js"><link rel="prefetch" href="/assets/js/53.36d6b65a.js"><link rel="prefetch" href="/assets/js/54.e8193f46.js"><link rel="prefetch" href="/assets/js/55.bc9e5a15.js"><link rel="prefetch" href="/assets/js/56.c61f1bc8.js"><link rel="prefetch" href="/assets/js/57.42ce875b.js"><link rel="prefetch" href="/assets/js/58.555cbd61.js"><link rel="prefetch" href="/assets/js/59.f438b893.js"><link rel="prefetch" href="/assets/js/6.00b8267b.js"><link rel="prefetch" href="/assets/js/60.bf1f44e5.js"><link rel="prefetch" href="/assets/js/61.058322d7.js"><link rel="prefetch" href="/assets/js/62.3305ddd1.js"><link rel="prefetch" href="/assets/js/63.1a21c891.js"><link rel="prefetch" href="/assets/js/64.58ef0aa9.js"><link rel="prefetch" href="/assets/js/65.1a6692c8.js"><link rel="prefetch" href="/assets/js/66.0f9e1539.js"><link rel="prefetch" href="/assets/js/67.5b7ea4a1.js"><link rel="prefetch" href="/assets/js/68.e1849aed.js"><link rel="prefetch" href="/assets/js/69.688c6c2d.js"><link rel="prefetch" href="/assets/js/7.5b9b1097.js"><link rel="prefetch" href="/assets/js/70.ee1431b8.js"><link rel="prefetch" href="/assets/js/71.3ed5ac1e.js"><link rel="prefetch" href="/assets/js/72.ebbdaf1e.js"><link rel="prefetch" href="/assets/js/73.d9db0ab2.js"><link rel="prefetch" href="/assets/js/74.c795db4d.js"><link rel="prefetch" href="/assets/js/75.31c1227b.js"><link rel="prefetch" href="/assets/js/76.5f9a7c2e.js"><link rel="prefetch" href="/assets/js/77.47816ec7.js"><link rel="prefetch" href="/assets/js/78.33cadcaf.js"><link rel="prefetch" href="/assets/js/79.5d590a37.js"><link rel="prefetch" href="/assets/js/80.e7b50a50.js"><link rel="prefetch" href="/assets/js/81.0f053796.js"><link rel="prefetch" href="/assets/js/82.30e92d1c.js"><link rel="prefetch" href="/assets/js/83.67d69821.js"><link rel="prefetch" href="/assets/js/84.9dc9c337.js"><link rel="prefetch" href="/assets/js/85.a8cd1b7e.js"><link rel="prefetch" href="/assets/js/86.03bbfdf9.js"><link rel="prefetch" href="/assets/js/87.8d12d75a.js"><link rel="prefetch" href="/assets/js/88.a83a31e0.js"><link rel="prefetch" href="/assets/js/89.87dc01a8.js"><link rel="prefetch" href="/assets/js/90.b2759641.js"><link rel="prefetch" href="/assets/js/91.f71f19bd.js"><link rel="prefetch" href="/assets/js/92.d942b353.js"><link rel="prefetch" href="/assets/js/94.e886976b.js"><link rel="prefetch" href="/assets/js/95.db5217d6.js"><link rel="prefetch" href="/assets/js/96.7dcd961f.js"><link rel="prefetch" href="/assets/js/97.4d272691.js"><link rel="prefetch" href="/assets/js/98.7f84af86.js"><link rel="prefetch" href="/assets/js/99.c80fc6a5.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.9b93fcb7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.170a9fe0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CodingDais</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link router-link-active">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/ts/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li><li class="dropdown-item"><!----> <a href="/tools/linux.html" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/resume/" class="nav-link">
+  Contact
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link router-link-active">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/ts/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li><li class="dropdown-item"><!----> <a href="/tools/linux.html" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/resume/" class="nav-link">
+  Contact
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/javascript/" aria-current="page" class="sidebar-link">Besic Java Dom</a></li><li><a href="/javascript/oops.html" class="sidebar-link">4 Ways to Define Javasript Objects</a></li><li><a href="/javascript/first.html" class="sidebar-link">Callbacks</a></li><li><a href="/javascript/function.html" class="sidebar-link">function</a></li><li><a href="/javascript/newFeature.html" class="sidebar-link">New Features</a></li><li><a href="/javascript/object.html" aria-current="page" class="active sidebar-link">Object in js for one user</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/object.html#object-in-js-for-multiple-user" class="sidebar-link">Object in js for multiple user</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#inheritance" class="sidebar-link">Inheritance</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#call-parent-class-method-by-child-class" class="sidebar-link">Call parent class method by child class</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#super-key-word" class="sidebar-link">Super Key word</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#static-properties" class="sidebar-link">Static Properties</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#static-methods" class="sidebar-link">Static Methods</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#getters-new-features" class="sidebar-link">Getters new features</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#setters" class="sidebar-link">Setters</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#count-how-many-instance-exists" class="sidebar-link">count how many instance exists</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#public" class="sidebar-link">Public</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#private-2021" class="sidebar-link">Private 2021</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#private-method" class="sidebar-link">Private method</a></li><li class="sidebar-sub-header"><a href="/javascript/object.html#static-initialization" class="sidebar-link">Static Initialization</a></li></ul></li><li><a href="/javascript/scope.html" class="sidebar-link">scropes</a></li><li><a href="/javascript/storage.html" class="sidebar-link">Stroage</a></li><li><a href="/javascript/thiskeyword.html" class="sidebar-link">This keyword</a></li><li><a href="/javascript/timer.html" class="sidebar-link">Timer</a></li><li><a href="/javascript/trickypart.html" class="sidebar-link">Tricky</a></li><li><a href="/javascript/underHookOop.html" class="sidebar-link">Under hood oops</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="object-in-js-for-one-user"><a href="#object-in-js-for-one-user" class="header-anchor">#</a> Object in js for one user</h1> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> o1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> o2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// same thing</span>
+
+o1<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;rohan&quot;</span><span class="token punctuation">;</span>
+o1<span class="token punctuation">[</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;rohan&quot;</span><span class="token punctuation">;</span> <span class="token comment">// same thing</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> o1<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'object'</span>
+
+<span class="token comment">// Properties that don't exist evaluate to undefined</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o1<span class="token punctuation">.</span>lastName<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span>
+
+<span class="token comment">// note</span>
+
+<span class="token comment">// All keys get stringified</span>
+
+o1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span> <span class="token comment">// this convert automatic o[&quot;1&quot;]</span>
+o1<span class="token punctuation">[</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;automatic override&quot;</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// this convert automatic</span>
+
+o1<span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;this is true&quot;</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o1<span class="token punctuation">[</span><span class="token string">&quot;true&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// this is true</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o1<span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// this is true</span>
+
+<span class="token comment">// also add function inside very common</span>
+
+o1<span class="token punctuation">.</span><span class="token function-variable function">sayHi</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token string">&quot;Hi&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o1<span class="token punctuation">.</span><span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Hi</span>
+
+<span class="token comment">// mix</span>
+
+<span class="token keyword">let</span> myTri <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">getArea</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">getHypotenuse</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">**</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">power</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> value <span class="token operator">*</span> value<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myTri<span class="token punctuation">.</span><span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3.5</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myTri<span class="token punctuation">.</span><span class="token function">getHypotenuse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 5</span>
+
+<span class="token comment">//  we can also update a and b</span>
+myTri<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+myTri<span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myTri<span class="token punctuation">.</span><span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 15</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myTri<span class="token punctuation">.</span><span class="token function">getHypotenuse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 22</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myTri<span class="token punctuation">.</span><span class="token function">power</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//  16</span>
+</code></pre></div><h2 id="object-in-js-for-multiple-user"><a href="#object-in-js-for-multiple-user" class="header-anchor">#</a> Object in js for multiple user</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Triangle</span> <span class="token punctuation">{</span>
+  <span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getHypotenuse</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">**</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> myTri <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Triangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+myTri<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+myTri<span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myTri<span class="token punctuation">.</span><span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 15</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myTri<span class="token punctuation">.</span><span class="token function">getHypotenuse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 22</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> myTri<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// object</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token keyword">instanceof</span> <span class="token class-name">Array</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myTri <span class="token keyword">instanceof</span> <span class="token class-name">Triangle</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+
+<span class="token comment">// manually added variables</span>
+
+<span class="token comment">// let myTri = new Triangle();</span>
+<span class="token comment">// myTri.a = 10; // manually</span>
+<span class="token comment">// myTri.b = 20; // manually</span>
+
+<span class="token comment">// use constructor</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Triangle2</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>Number<span class="token punctuation">.</span><span class="token function">isFinite</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">||</span> a <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;Invalid a: &quot;</span> <span class="token operator">+</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>Number<span class="token punctuation">.</span><span class="token function">isFinite</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token operator">||</span> b <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;Invalid b: &quot;</span> <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">=</span> a<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">=</span> b<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getHypotenuse</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">**</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> myTri2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Triangle2</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/// call constructor</span>
+
+<span class="token comment">// node constructor functions always just return undefined;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myTri2<span class="token punctuation">.</span><span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 15</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myTri2<span class="token punctuation">.</span><span class="token function">getHypotenuse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 22</span>
+
+<span class="token comment">// no error without arguments all if you don't throw eror from constructor</span>
+<span class="token comment">// let myTri22 = new Triangle2();</span>
+</code></pre></div><h2 id="inheritance"><a href="#inheritance" class="header-anchor">#</a> Inheritance</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Triangle</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>Number<span class="token punctuation">.</span><span class="token function">isFinite</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">||</span> a <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;Invalid a: &quot;</span> <span class="token operator">+</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>Number<span class="token punctuation">.</span><span class="token function">isFinite</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token operator">||</span> b <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;Invalid b: &quot;</span> <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">=</span> a<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">=</span> b<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getHypotenuse</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">**</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">describe</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;Runs and hides tringle&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ShyTriangle</span> <span class="token keyword">extends</span> <span class="token class-name">Triangle</span> <span class="token punctuation">{</span>
+  <span class="token function">describe</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;Runs and hides shytriangle&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// automatic super key word ans pass value inside parent class so we don't need to add super key word in triangle class</span>
+<span class="token keyword">let</span> shy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ShyTriangle</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>shy<span class="token punctuation">.</span><span class="token function">describe</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>shy<span class="token punctuation">.</span><span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="call-parent-class-method-by-child-class"><a href="#call-parent-class-method-by-child-class" class="header-anchor">#</a> Call parent class method by child class</h2> <p>we use super keyword for this</p> <p><code>super.describe()</code> like this.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Triangle</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>Number<span class="token punctuation">.</span><span class="token function">isFinite</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">||</span> a <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;Invalid a: &quot;</span> <span class="token operator">+</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>Number<span class="token punctuation">.</span><span class="token function">isFinite</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token operator">||</span> b <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;Invalid b: &quot;</span> <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">=</span> a<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">=</span> b<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getHypotenuse</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">**</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">describe</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;Runs and hides tringle&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ShyTriangle</span> <span class="token keyword">extends</span> <span class="token class-name">Triangle</span> <span class="token punctuation">{</span>
+  <span class="token function">describe</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// use super key word for it</span>
+    <span class="token keyword">const</span> parentClassResult <span class="token operator">=</span> <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">describe</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;Runs and hides shytriangle &quot;</span> <span class="token operator">+</span> parentClassResult<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// automatic super key word ans pass value inside parent class so we don't need to add super key word in triangle class</span>
+<span class="token keyword">let</span> shy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ShyTriangle</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>shy<span class="token punctuation">.</span><span class="token function">describe</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Runs and hides shytriangle Runs and hides tringle</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>shy<span class="token punctuation">.</span><span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="super-key-word"><a href="#super-key-word" class="header-anchor">#</a> Super Key word</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Triangle</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">=</span> a<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">=</span> b<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getHypotenuse</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">**</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">describe</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Area is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">.</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ColorTriangle</span> <span class="token keyword">extends</span> <span class="token class-name">Triangle</span> <span class="token punctuation">{</span>
+  <span class="token comment">// we we want to add owr properties color we have to use super key word and pass value</span>
+  <span class="token comment">// if don't use constructor automatic pass super</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> color</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">=</span> color<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ColorMoodTriangle</span> <span class="token keyword">extends</span> <span class="token class-name">ColorTriangle</span> <span class="token punctuation">{</span>
+  <span class="token comment">// we have to use same super key word and pass same value which are exetends</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> color<span class="token punctuation">,</span> mood</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>mood <span class="token operator">=</span> mood<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="static-properties"><a href="#static-properties" class="header-anchor">#</a> Static Properties</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Cat</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> breed</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>breed <span class="token operator">=</span> breed<span class="token punctuation">;</span>
+    <span class="token comment">// this.species = &quot;felis catus&quot;; use it in static best practice</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// you don't need change every intance you can change it every instance with change</span>
+  <span class="token keyword">static</span> species <span class="token operator">=</span> <span class="token string">&quot;felis catus&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token function">getInsideFun</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;static Property &quot;</span> <span class="token operator">+</span> Cat<span class="token punctuation">.</span>species<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// const cat = new Cat(); // Cat { name: undefined, breed: undefined }</span>
+<span class="token keyword">const</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token string">&quot;blue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Scottish fold&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//Cat { name: 'blue', breed: 'Scottish fold' }</span>
+
+<span class="token comment">// static values is not showing inside cat instance inside</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Cat { name: 'blue', breed: 'Scottish fold' }</span>
+
+<span class="token comment">// you can get like this</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Cat<span class="token punctuation">.</span>species<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// felis catus</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>cat<span class="token punctuation">.</span><span class="token function">getInsideFun</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// static Property felis catus</span>
+
+<span class="token comment">// all instance change automatic don't need one by one change</span>
+Cat<span class="token punctuation">.</span>species <span class="token operator">=</span> <span class="token string">&quot;i changed for all this class&quot;</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>cat<span class="token punctuation">.</span><span class="token function">getInsideFun</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// static Property i changed for all this class and instance</span>
+</code></pre></div><h2 id="static-methods"><a href="#static-methods" class="header-anchor">#</a> Static Methods</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Cat</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> breed</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>breed <span class="token operator">=</span> breed<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">static</span> species <span class="token operator">=</span> <span class="token string">&quot;felis catus&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">static</span> <span class="token function">meow</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// return &quot;Meow meow meow!!!&quot; + this.name; // not working this keyword</span>
+    <span class="token comment">// return &quot;Meow meow meow!!!&quot; + Cat.species; // this will work</span>
+    <span class="token comment">// return this; // this is return full class not object</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;Meow meow meow!!!&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token string">&quot;blue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;bread here&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// not exists in instance is it exists in class inside</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Cat { name: 'blue', breed: 'bread here' }</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Cat<span class="token punctuation">.</span><span class="token function">meow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Meow meow meow!!!</span>
+</code></pre></div><p>Use of static method</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">MyMath</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">static</span> <span class="token function">multiple</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a <span class="token operator">*</span> b<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>MyMath<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 25</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Cat</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> breed</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>breed <span class="token operator">=</span> breed<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">static</span> <span class="token function">registerStray</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;Muffin&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Biscuit&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Sleepy&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Dodo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Princess&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token function">choice</span><span class="token punctuation">(</span>names<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> <span class="token string">&quot;unknown&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">choice</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> randIdx <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> arr<span class="token punctuation">[</span>randIdx<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Cat<span class="token punctuation">.</span><span class="token function">registerStray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Cat { name: 'Dodo', breed: 'unknown' }</span>
+</code></pre></div><h2 id="getters-new-features"><a href="#getters-new-features" class="header-anchor">#</a> Getters new features</h2> <p>JavaScript provides special methods, termed &quot;getters&quot; and &quot;setters&quot;, which allow you define the ways to retrieve or change the values of object properties respectively.</p> <p>Allow you to retrieve the value of an object's property.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Circle</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">radius</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_radius <span class="token operator">=</span> radius<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// getter for the diameter</span>
+  <span class="token comment">// work as properties</span>
+  <span class="token keyword">get</span> <span class="token function">diameter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_radius <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">get</span> <span class="token function">radius</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_radius<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> circle <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>circle<span class="token punctuation">.</span>diameter<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 10 // working without () working like properties</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>circle<span class="token punctuation">.</span>radius<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 5 // working without () working like properties</span>
+</code></pre></div><h2 id="setters"><a href="#setters" class="header-anchor">#</a> Setters</h2> <p>Allow you to set the value of an object's property</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Circle</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">radius</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_radius <span class="token operator">=</span> radius<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// getter for the diameter</span>
+  <span class="token comment">// work as properties</span>
+  <span class="token keyword">get</span> <span class="token function">diameter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_radius <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// work same like properties</span>
+  <span class="token keyword">set</span> <span class="token function">radius</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;Radius can't be negative&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>_radius <span class="token operator">=</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> circle <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>circle<span class="token punctuation">.</span>diameter<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 10 // working without () working like properties</span>
+circle<span class="token punctuation">.</span>radius <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token comment">// same work set properties like properties</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>circle<span class="token punctuation">.</span>diameter<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 10</span>
+</code></pre></div><h2 id="count-how-many-instance-exists"><a href="#count-how-many-instance-exists" class="header-anchor">#</a> count how many instance exists</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Cat</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> numOfCats <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    Cat<span class="token punctuation">.</span>numOfCats <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> catred <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token string">&quot;red&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> catblue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token string">&quot;blue&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> catgreen <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token string">&quot;green&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Cat<span class="token punctuation">.</span>numOfCats<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+</code></pre></div><h2 id="public"><a href="#public" class="header-anchor">#</a> Public</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Cat</span> <span class="token punctuation">{</span>
+  <span class="token comment">// all peroperties defined here</span>
+  <span class="token keyword">static</span> numOfCats <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  name<span class="token punctuation">;</span> <span class="token comment">// default undefined</span>
+  breed<span class="token punctuation">;</span> <span class="token comment">// default undefined</span>
+  numLegs <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+  hasTail <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> breed</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>breed <span class="token operator">=</span> breed<span class="token punctuation">;</span>
+    Cat<span class="token punctuation">.</span>numOfCats <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">amputate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>numLegs <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token string">&quot;cat&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;red&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Cat { name: 'cat', breed: 'red', numLegs: 4, hasTail: true }</span>
+</code></pre></div><h2 id="private-2021"><a href="#private-2021" class="header-anchor">#</a> Private 2021</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Circle</span> <span class="token punctuation">{</span>
+  <span class="token comment">// private</span>
+  #radius<span class="token punctuation">;</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">radius</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>#radius <span class="token operator">=</span> radius<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getPrivateVal</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>#radius<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> circle <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//modify here</span>
+<span class="token comment">// circle.#radius = 0; //stop here we made it private</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>circle<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Private field '#radius' must be declared in an enclosing class</span>
+
+<span class="token comment">// console.log(circle.#radius); // can't access</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>circle<span class="token punctuation">.</span><span class="token function">getPrivateVal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 10</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> inventory <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;asparagus&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;vegetables&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">quantity</span><span class="token operator">:</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;bananas&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;fruit&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">quantity</span><span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;goat&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;meat&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">quantity</span><span class="token operator">:</span> <span class="token number">23</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;cherries&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;fruit&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">quantity</span><span class="token operator">:</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;fish&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;meat&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">quantity</span><span class="token operator">:</span> <span class="token number">22</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> result <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">groupBy</span><span class="token punctuation">(</span>inventory<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> type <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> type<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="private-method"><a href="#private-method" class="header-anchor">#</a> Private method</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token function">#privateMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;this is private method&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">publicMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">#privateMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> myClass <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// myClass.privateMethod(); // error can't access private method</span>
+
+myClass<span class="token punctuation">.</span><span class="token function">publicMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// this is private method</span>
+</code></pre></div><h2 id="static-initialization"><a href="#static-initialization" class="header-anchor">#</a> Static Initialization</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;class is loaded only called once like useeffect&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> myClass <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/// real life use</span>
+
+<span class="token keyword">class</span> <span class="token class-name">DatabaseConnection</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> connection<span class="token punctuation">;</span>
+  <span class="token keyword">static</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>connection <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">&quot;production&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>connection <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">loadProductionConnection</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>connection <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">loadDevelopmentConnection</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">static</span> <span class="token function">loadProductionConnection</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+  <span class="token keyword">static</span> <span class="token function">loadDevelopmentConnection</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/newFeature.html" class="prev">
+        New Features
+      </a></span> <span class="next"><a href="/javascript/scope.html">
+        scropes
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.84d49489.js" defer></script><script src="/assets/js/2.687c71a6.js" defer></script><script src="/assets/js/1.fc8a768a.js" defer></script><script src="/assets/js/93.1d8ac7b6.js" defer></script>
+  </body>
+</html>
