@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reactjs Design Patterns | CodingDais</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="design pattern">
+    
+    <link rel="preload" href="/assets/css/0.styles.bbb302d8.css" as="style"><link rel="preload" href="/assets/js/app.7c9659b3.js" as="script"><link rel="preload" href="/assets/js/2.687c71a6.js" as="script"><link rel="preload" href="/assets/js/1.fc8a768a.js" as="script"><link rel="preload" href="/assets/js/70.06f7562e.js" as="script"><link rel="prefetch" href="/assets/js/10.60b29b94.js"><link rel="prefetch" href="/assets/js/100.c4cd97e6.js"><link rel="prefetch" href="/assets/js/101.dff7b5b9.js"><link rel="prefetch" href="/assets/js/102.ea0e4bea.js"><link rel="prefetch" href="/assets/js/103.aaaa4d06.js"><link rel="prefetch" href="/assets/js/104.f93c5039.js"><link rel="prefetch" href="/assets/js/105.e157ecec.js"><link rel="prefetch" href="/assets/js/106.74bc8562.js"><link rel="prefetch" href="/assets/js/107.5e670a0c.js"><link rel="prefetch" href="/assets/js/108.9cbe536e.js"><link rel="prefetch" href="/assets/js/109.a2f94667.js"><link rel="prefetch" href="/assets/js/11.0921a871.js"><link rel="prefetch" href="/assets/js/110.4d869d3f.js"><link rel="prefetch" href="/assets/js/111.3bd6b5bf.js"><link rel="prefetch" href="/assets/js/112.36cff9ca.js"><link rel="prefetch" href="/assets/js/113.7707087b.js"><link rel="prefetch" href="/assets/js/114.41b2c36a.js"><link rel="prefetch" href="/assets/js/115.941d9a3d.js"><link rel="prefetch" href="/assets/js/116.d2b8b744.js"><link rel="prefetch" href="/assets/js/117.8ede0085.js"><link rel="prefetch" href="/assets/js/118.37c6c4eb.js"><link rel="prefetch" href="/assets/js/119.fceff111.js"><link rel="prefetch" href="/assets/js/12.4ef9a524.js"><link rel="prefetch" href="/assets/js/120.95c4fc42.js"><link rel="prefetch" href="/assets/js/121.a456445e.js"><link rel="prefetch" href="/assets/js/122.f01cebce.js"><link rel="prefetch" href="/assets/js/123.e51bcf2b.js"><link rel="prefetch" href="/assets/js/124.5d5f30b3.js"><link rel="prefetch" href="/assets/js/125.bc4fe60a.js"><link rel="prefetch" href="/assets/js/126.d430fe91.js"><link rel="prefetch" href="/assets/js/127.21ab94af.js"><link rel="prefetch" href="/assets/js/128.63d6a976.js"><link rel="prefetch" href="/assets/js/129.ff50c3d2.js"><link rel="prefetch" href="/assets/js/13.8c65a56a.js"><link rel="prefetch" href="/assets/js/130.e805a4ee.js"><link rel="prefetch" href="/assets/js/131.76889df9.js"><link rel="prefetch" href="/assets/js/132.d7cb8041.js"><link rel="prefetch" href="/assets/js/133.27fbd9ce.js"><link rel="prefetch" href="/assets/js/134.42ff472d.js"><link rel="prefetch" href="/assets/js/135.306f22f9.js"><link rel="prefetch" href="/assets/js/136.40f9737e.js"><link rel="prefetch" href="/assets/js/137.c48d6a69.js"><link rel="prefetch" href="/assets/js/138.cd4201e6.js"><link rel="prefetch" href="/assets/js/139.ab6ff0df.js"><link rel="prefetch" href="/assets/js/14.562947fc.js"><link rel="prefetch" href="/assets/js/140.856b35ee.js"><link rel="prefetch" href="/assets/js/141.0630d225.js"><link rel="prefetch" href="/assets/js/142.80c7ea4e.js"><link rel="prefetch" href="/assets/js/143.1fbbe998.js"><link rel="prefetch" href="/assets/js/144.a2c3a4b8.js"><link rel="prefetch" href="/assets/js/145.96b7f9b4.js"><link rel="prefetch" href="/assets/js/146.717feb96.js"><link rel="prefetch" href="/assets/js/147.afa93806.js"><link rel="prefetch" href="/assets/js/148.9feb68b5.js"><link rel="prefetch" href="/assets/js/149.839e38fc.js"><link rel="prefetch" href="/assets/js/15.58576da3.js"><link rel="prefetch" href="/assets/js/150.d68e0b09.js"><link rel="prefetch" href="/assets/js/151.b2518ff3.js"><link rel="prefetch" href="/assets/js/152.05ed804b.js"><link rel="prefetch" href="/assets/js/153.005b2af1.js"><link rel="prefetch" href="/assets/js/154.6234ac64.js"><link rel="prefetch" href="/assets/js/155.c14d10fe.js"><link rel="prefetch" href="/assets/js/156.3fa7f00b.js"><link rel="prefetch" href="/assets/js/157.78b410d2.js"><link rel="prefetch" href="/assets/js/158.32689fdb.js"><link rel="prefetch" href="/assets/js/159.f570e29e.js"><link rel="prefetch" href="/assets/js/16.295fa0e8.js"><link rel="prefetch" href="/assets/js/160.f6b78a8f.js"><link rel="prefetch" href="/assets/js/161.96f3d753.js"><link rel="prefetch" href="/assets/js/162.1a19bc9e.js"><link rel="prefetch" href="/assets/js/163.b1eb701e.js"><link rel="prefetch" href="/assets/js/164.5e4db0da.js"><link rel="prefetch" href="/assets/js/165.fc856435.js"><link rel="prefetch" href="/assets/js/166.1fe1838c.js"><link rel="prefetch" href="/assets/js/167.7e5e2006.js"><link rel="prefetch" href="/assets/js/168.06f65944.js"><link rel="prefetch" href="/assets/js/169.f7cd8025.js"><link rel="prefetch" href="/assets/js/17.fd550f40.js"><link rel="prefetch" href="/assets/js/170.85e03601.js"><link rel="prefetch" href="/assets/js/18.f6ff2228.js"><link rel="prefetch" href="/assets/js/19.92f5cd3c.js"><link rel="prefetch" href="/assets/js/20.1211d94e.js"><link rel="prefetch" href="/assets/js/21.ff069fa7.js"><link rel="prefetch" href="/assets/js/22.3988e024.js"><link rel="prefetch" href="/assets/js/23.6d93e3e2.js"><link rel="prefetch" href="/assets/js/24.9a41c28e.js"><link rel="prefetch" href="/assets/js/25.bf7c947e.js"><link rel="prefetch" href="/assets/js/26.9678f5db.js"><link rel="prefetch" href="/assets/js/27.3a36bc5b.js"><link rel="prefetch" href="/assets/js/28.857f28ed.js"><link rel="prefetch" href="/assets/js/29.9eeb8a53.js"><link rel="prefetch" href="/assets/js/3.33514a70.js"><link rel="prefetch" href="/assets/js/30.73a4a261.js"><link rel="prefetch" href="/assets/js/31.30605b95.js"><link rel="prefetch" href="/assets/js/32.0060774c.js"><link rel="prefetch" href="/assets/js/33.f421bb5f.js"><link rel="prefetch" href="/assets/js/34.5a1506e6.js"><link rel="prefetch" href="/assets/js/35.c3c8d07f.js"><link rel="prefetch" href="/assets/js/36.c7be0120.js"><link rel="prefetch" href="/assets/js/37.87a2aa15.js"><link rel="prefetch" href="/assets/js/38.ee14051e.js"><link rel="prefetch" href="/assets/js/39.7613f277.js"><link rel="prefetch" href="/assets/js/4.3f408848.js"><link rel="prefetch" href="/assets/js/40.c6f4422a.js"><link rel="prefetch" href="/assets/js/41.f42fcdb2.js"><link rel="prefetch" href="/assets/js/42.20d898f5.js"><link rel="prefetch" href="/assets/js/43.e193b8e4.js"><link rel="prefetch" href="/assets/js/44.15ac039c.js"><link rel="prefetch" href="/assets/js/45.2598277e.js"><link rel="prefetch" href="/assets/js/46.edfb1345.js"><link rel="prefetch" href="/assets/js/47.6edfcd44.js"><link rel="prefetch" href="/assets/js/48.9f160e88.js"><link rel="prefetch" href="/assets/js/49.34cfe5cf.js"><link rel="prefetch" href="/assets/js/5.5cb44e85.js"><link rel="prefetch" href="/assets/js/50.b456f2ec.js"><link rel="prefetch" href="/assets/js/51.72a78dc9.js"><link rel="prefetch" href="/assets/js/52.9c15862e.js"><link rel="prefetch" href="/assets/js/53.645877e4.js"><link rel="prefetch" href="/assets/js/54.6cc74637.js"><link rel="prefetch" href="/assets/js/55.0e08aaa3.js"><link rel="prefetch" href="/assets/js/56.94556843.js"><link rel="prefetch" href="/assets/js/57.f362f828.js"><link rel="prefetch" href="/assets/js/58.43e031c6.js"><link rel="prefetch" href="/assets/js/59.d8f3db06.js"><link rel="prefetch" href="/assets/js/6.00b8267b.js"><link rel="prefetch" href="/assets/js/60.7212e15a.js"><link rel="prefetch" href="/assets/js/61.1d2b0403.js"><link rel="prefetch" href="/assets/js/62.7f44df62.js"><link rel="prefetch" href="/assets/js/63.3b154e07.js"><link rel="prefetch" href="/assets/js/64.91bdc2de.js"><link rel="prefetch" href="/assets/js/65.4e999a7c.js"><link rel="prefetch" href="/assets/js/66.b5cce7aa.js"><link rel="prefetch" href="/assets/js/67.1fcce99a.js"><link rel="prefetch" href="/assets/js/68.a6ee9088.js"><link rel="prefetch" href="/assets/js/69.64c3040d.js"><link rel="prefetch" href="/assets/js/7.5b9b1097.js"><link rel="prefetch" href="/assets/js/71.eece94e0.js"><link rel="prefetch" href="/assets/js/72.66a0cb25.js"><link rel="prefetch" href="/assets/js/73.82f6ef47.js"><link rel="prefetch" href="/assets/js/74.210b4038.js"><link rel="prefetch" href="/assets/js/75.249a098d.js"><link rel="prefetch" href="/assets/js/76.3cdbd8d5.js"><link rel="prefetch" href="/assets/js/77.49c28294.js"><link rel="prefetch" href="/assets/js/78.aa99c0cc.js"><link rel="prefetch" href="/assets/js/79.a16a5c45.js"><link rel="prefetch" href="/assets/js/80.aa9b67fd.js"><link rel="prefetch" href="/assets/js/81.9e50680c.js"><link rel="prefetch" href="/assets/js/82.3a8f8ff0.js"><link rel="prefetch" href="/assets/js/83.b2777811.js"><link rel="prefetch" href="/assets/js/84.0dc6d8c8.js"><link rel="prefetch" href="/assets/js/85.85e64358.js"><link rel="prefetch" href="/assets/js/86.271432e6.js"><link rel="prefetch" href="/assets/js/87.4a5f08d4.js"><link rel="prefetch" href="/assets/js/88.d8ee7c09.js"><link rel="prefetch" href="/assets/js/89.1ae3fd72.js"><link rel="prefetch" href="/assets/js/90.5b48a5e7.js"><link rel="prefetch" href="/assets/js/91.d73e94e4.js"><link rel="prefetch" href="/assets/js/92.7e62b86d.js"><link rel="prefetch" href="/assets/js/93.dfb806f1.js"><link rel="prefetch" href="/assets/js/94.5770d499.js"><link rel="prefetch" href="/assets/js/95.984306e7.js"><link rel="prefetch" href="/assets/js/96.e3b1c6aa.js"><link rel="prefetch" href="/assets/js/97.8f7cc5a1.js"><link rel="prefetch" href="/assets/js/98.fc820fcf.js"><link rel="prefetch" href="/assets/js/99.8a746732.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.9b93fcb7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bbb302d8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CodingDais</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/ts/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li><li class="dropdown-item"><!----> <a href="/tools/linux.html" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/resume/" class="nav-link">
+  Contact
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/ts/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li><li class="dropdown-item"><!----> <a href="/tools/linux.html" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/resume/" class="nav-link">
+  Contact
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="back"><a href="#back" class="header-anchor">#</a> <a href="/blog/" class="router-link-active">Back</a></h3> <h1 id="design-patterns"><a href="#design-patterns" class="header-anchor">#</a> Design Patterns</h1> <p>React</p> <p><img src="/nodejs/renderreactjs.png" alt="img"></p> <p>Basic to Medium Level Questions (ReactJs)</p> <p>Questions</p> <h2 id="_1-what-are-the-limitations-of-react"><a href="#_1-what-are-the-limitations-of-react" class="header-anchor">#</a> 1. What are the limitations of React?</h2> <ol><li>Limitations of React:
+<ul><li>React is not a full-blown framework as it is only a library.</li> <li>The components of React are numerous and will take time to fully grasp
+the benefits of all.</li> <li>It might be difficult for beginner programmers to understand React.</li> <li>Coding might become complex as it will make use of inline templating
+and JSX.</li></ul></li></ol> <h2 id="_2-what-are-keys-in-react-what-is-it-significance"><a href="#_2-what-are-keys-in-react-what-is-it-significance" class="header-anchor">#</a> 2. What are keys in React? What is it significance?</h2> <ul><li>A key is a special string attribute that needs to be included when using lists of elements.</li> <li>Keys help react identify which elements were added, changed or
+removed.</li> <li>Keys should be given to array elements for providing a unique identity
+for each element.</li> <li>Without keys, react does not understand the order or uniqueness of
+each element.</li> <li>With keys, react has an idea of which particular element was deleted,
+edited, and added.</li> <li>Keys are generally used for displaying a list of data coming from an API.</li></ul> <h2 id="_3-what-is-the-virtual-dom-how-does-react-use-the-virtual-dom-to-render-the-ui"><a href="#_3-what-is-the-virtual-dom-how-does-react-use-the-virtual-dom-to-render-the-ui" class="header-anchor">#</a> 3. What is the virtual DOM? How does react use the virtual DOM to render the UI?</h2> <p>Virtual DOM is a concept where a virtual representation of the real DOM
+is kept inside the memory and is synced with the real DOM by a library
+such as React DOM. For every DOM object, there is a corresponding
+virtual DOM object(copy), which has the same properties. The main
+difference between the real DOM object and the virtual DOM object is
+that any changes in the virtual DOM object will not reflect on the screen
+directly. Consider a virtual DOM object as a blueprint of the real DOM
+object. Whenever a JSX element gets rendered, every virtual DOM
+object gets updated.</p> <h2 id="_4-what-is-the-difference-between-state-and-props"><a href="#_4-what-is-the-difference-between-state-and-props" class="header-anchor">#</a> 4. What is the difference between state and props?</h2> <p>State can be defined as the fundamental element that determines the
+functions and characteristics of a component within ReactJS, whereas
+props or properties, are transferred from a parent component to a
+PureComponent and are considered to be unchangeable.</p> <h2 id="_5-what-are-stateless-components"><a href="#_5-what-are-stateless-components" class="header-anchor">#</a> 5. What are stateless components?</h2> <p>Stateless components are components that, instead of possessing their
+own state, take on whatever form that is applied to them. For this
+reason, they can also be called reusable components.</p> <h2 id="_6-what-are-controlled-components-in-react"><a href="#_6-what-are-controlled-components-in-react" class="header-anchor">#</a> 6. What are controlled components in react?</h2> <p>React’s Controlled Components manage form data via component state,
+receiving values through props and updating through callbacks like
+onChange. The parent component maintains the state, passing updated
+values as props to the controlled component. Form elements, whether
+typed (e.g., textarea, input) or selected (e.g., radio buttons, checkboxes),
+trigger state updates through functions on change.</p> <h2 id="_7-name-the-types-of-side-effects-in-react-component"><a href="#_7-name-the-types-of-side-effects-in-react-component" class="header-anchor">#</a> 7. Name the types of side effects in React component</h2> <p>There are two types of side effects in React component. They are:</p> <ul><li>Effects without Cleanup</li> <li>Effects with Cleanup</li></ul> <h2 id="_8-what-is-prop-drilling-in-react"><a href="#_8-what-is-prop-drilling-in-react" class="header-anchor">#</a> 8. What is prop drilling in React?</h2> <p>Prop drilling is the process of passing down data or state through
+multiple layers of a component hierarchy. By the way, it refers to the
+practice of passing data from a parent component to its children and
+then from the children to their own children and so on, until the data
+reaches the desired component that needs it.</p> <h2 id="_9-what-is-usestate-in-react"><a href="#_9-what-is-usestate-in-react" class="header-anchor">#</a> 9. What is useState() in React?</h2> <p>useState() hook allows one to declare a state variable inside a function.
+It should be noted that one use of useState() can only be used to declare
+one state variable. It was introduced in version 16.8.</p> <h2 id="_10-why-can-t-browsers-read-jsx"><a href="#_10-why-can-t-browsers-read-jsx" class="header-anchor">#</a> 10.Why can’t browsers read JSX?</h2> <p>Browsers can read JavaScript objects but JSX in not a JavaScript object.
+Hence, to allow a browser to read JSX, first, we need to modify JSX file
+into a JavaScript object using JSX transformers and then pass it to the
+browser.</p> <h2 id="_11-what-are-pure-components"><a href="#_11-what-are-pure-components" class="header-anchor">#</a> 11.What are pure components?</h2> <p>Pure components are the components whose output is determined only
+by it’s input that is props. Pure component is similar to component
+except that it handles the shouldComponentUpdate method.</p> <h2 id="_12-what-are-the-different-ways-to-style-a-react-component"><a href="#_12-what-are-the-different-ways-to-style-a-react-component" class="header-anchor">#</a> 12.What are the different ways to style a React component?</h2> <p>There are many different ways through which one can style a React
+component. Some of the ways are :</p> <ul><li><p><strong>Inline Styling:</strong> We can directly style an element using inline style
+attributes. Make sure the value of style is a JavaScript object</p></li> <li><p><strong>Using JavaScript object:</strong> We can create a separate JavaScript object and set the desired style properties. This object can be used as the value of the inline style attribute.</p></li> <li><p><strong>CSS Stylesheet:</strong> We can create a separate CSS file and write all the styles for the component inside that file. This file needs to be imported inside the component file.</p></li> <li><p><strong>CSS Modules:</strong> We can create a separate CSS module and import this
+module inside our component. Create a file with “.module.css”‘
+extension, styles.module.css</p></li></ul> <h2 id="_13-what-is-the-significance-of-the-render-function"><a href="#_13-what-is-the-significance-of-the-render-function" class="header-anchor">#</a> 13.What is the significance of the render() function?</h2> <p>The render() function is significant as it plays an instrumental role in
+updating the UI. A render() is assigned to every ReactJS component and
+helps return a single ReactJS element when it is passed to the DOM.</p> <h1 id="advance-level-questions-reactjs"><a href="#advance-level-questions-reactjs" class="header-anchor">#</a> Advance Level Questions (ReactJS)</h1> <h2 id="_1-explain-strict-mode-in-react"><a href="#_1-explain-strict-mode-in-react" class="header-anchor">#</a> 1. Explain Strict Mode in React.</h2> <p>StrictMode is a tool added in version 16.3 of React to highlight potential
+problems in an application. It performs additional checks on the
+application. To enable StrictMode, &lt;React.StrictMode&gt; tags need to be
+added inside the application:</p> <ul><li>Identifying components with unsafe lifecycle methods:</li> <li>Warning about the usage of legacy string API:</li> <li>Warning about the usage of findDOMNode:</li> <li>Warning about the usage of legacy context API (because the API is error-
+prone).</li></ul> <h2 id="_2-name-a-few-techniques-to-optimize-react-app-performance"><a href="#_2-name-a-few-techniques-to-optimize-react-app-performance" class="header-anchor">#</a> 2. Name a few techniques to optimize React app performance.</h2> <p>There are many ways through which one can optimize the performance
+of a React app, let’s have a look at some of them:</p> <ul><li>Using useMemo( ) -</li> <li>Using React.PureComponent -</li> <li>Maintaining State Colocation -</li> <li>Lazy Loading -</li></ul> <h2 id="_3-how-to-pass-data-between-react-components"><a href="#_3-how-to-pass-data-between-react-components" class="header-anchor">#</a> 3. How to pass data between react components?</h2> <p>Parent Component to Child Component (using props)
+With the help of props, we can send data from a parent to a child
+component.</p> <ul><li>Child Component to Parent Component (using callbacks)
+<ul><li>Create a callback in the parent component which takes in the data
+needed as a parameter.</li> <li>Pass this callback as a prop to the child component.</li> <li>Send data from the child component using the callback.</li></ul></li></ul> <h2 id="_4-what-are-higher-order-components"><a href="#_4-what-are-higher-order-components" class="header-anchor">#</a> 4. What are Higher Order Components?</h2> <p>In React, a higher-order component is a function that takes a component
+as an argument and returns a new component that wraps the original
+component. HOCs allow you to add additional functionality to a
+component without modifying the component's code. For example, you
+can use a HOC to add authentication or routing capabilities to a
+component or to apply a specific style or behavior to multiple
+components.</p> <h2 id="_5-explain-conditional-rendering-in-react"><a href="#_5-explain-conditional-rendering-in-react" class="header-anchor">#</a> 5. Explain conditional rendering in React.</h2> <p>Conditional rendering refers to the dynamic output of user interface
+markups based on a condition state. It works in the same way as
+JavaScript conditions. Using conditional rendering, it is possible to toggle
+specific application functions, API data rendering, hide or show
+elements, decide permission levels, authentication handling, and so on.</p> <p>There are different approaches for implementing conditional rendering
+in React. Some of them are:</p> <ul><li>Using if-else conditional logic which is suitable for smaller as well as for medium-sized applications</li> <li>Using ternary operators, which takes away some amount of complication from if-else statements</li> <li>Using element variables, which will enable us to write cleaner code.</li></ul> <h2 id="_6-what-are-the-lifecycle-methods-of-react"><a href="#_6-what-are-the-lifecycle-methods-of-react" class="header-anchor">#</a> 6. What are the lifecycle methods of React?</h2> <p>React lifecycle hooks will have the methods that will be automatically
+called at different phases in the component lifecycle and thus it provides
+good control over what happens at the invoked point. It provides the
+power to effectively control and manipulate what goes on throughout
+the component lifecycle.</p> <p>The various lifecycle methods are:</p> <ul><li><p><strong>constructor():</strong> This method will be called when the component is
+initiated before anything has been done. It helps to set up the initial
+state and initial values.</p></li> <li><p><strong>getDerivedStateFromProps():</strong> This method will be called just before
+element(s) rendering in the DOM. It helps to set up the state object
+depending on the initial props. The getDerivedStateFromProps() method
+will have a state as an argument and it returns an object that made
+changes to the state. This will be the first method to be called on an
+updating of a component.</p></li> <li><p><strong>render():</strong> This method will output or re-render the HTML to the DOM
+with new changes. The render() method is an essential method and will
+be called always while the remaining methods are optional and will be
+called only if they are defined.</p></li> <li><p><strong>componentDidMount():</strong> This method will be called after the rendering of
+the component. Using this method, you can run statements that need
+the component to be already kept in the DOM.</p></li> <li><p><strong>shouldComponentUpdate():</strong> The Boolean value will be returned by this
+method which will specify whether React should proceed further with
+the rendering or not. The default value for this method will be True.</p></li> <li><p><strong>getSnapshotBeforeUpdate():</strong> This method will provide access for the
+props as well as for the state before the update. It is possible to check
+the previously present value before the update, even after the update.</p></li> <li><p><strong>componentDidUpdate():</strong> This method will be called after the component
+has been updated in the DOM.</p></li> <li><p><strong>componentWillUnmount():</strong> This method will be called when the
+component removal from the DOM is about to happen.</p></li></ul> <h2 id="_7-how-is-the-shadow-dom-different-from-the-virtual-dom"><a href="#_7-how-is-the-shadow-dom-different-from-the-virtual-dom" class="header-anchor">#</a> 7. How is the Shadow DOM different from the virtual DOM?</h2> <p>Virtual DOM, in simple terms, is nothing but the complete and full
+representation of an actual DOM.</p> <ul><li><p>Since any changes to the DOM cause the page to re-render more often
+than not, Virtual DOM primarily attempts to avoid any unnecessary and
+expensive changes to the DOM.</p></li> <li><p>This is achieved by grouping changes and doing a single re-render
+instead of several small ones.</p></li> <li><p>A copy of the DOM is saved in the memory and is used to compare any
+changes being done anywhere in the DOM, it’s compared to find
+differences. Thus, only those parts of the application are re-rendered
+which are updated instead of re-rendering the entire DOM.</p></li> <li><p>VueJS and ReactJS both use Virtual DOM.</p></li></ul> <h4 id="shadow-dom"><a href="#shadow-dom" class="header-anchor">#</a> Shadow DOM</h4> <ul><li><p>Shadow DOM, on the other hand, relates mostly to the concept of
+encapsulation. It is a tool that allows developers to overcome DOM
+encapsulation.</p></li> <li><p>It refers to the browser’s potential to add a subtree of DOM elements
+into the rendering of a document, but not into the DOM tree of the main
+document.</p></li> <li><p>Thus, it isolates the DOM and ensures that the DOM of a component is a
+separate element that won’t appear in a global DOM.</p></li> <li><p>Contrary to the DOM, Shadow DOM occurs in smaller pieces, implying
+that (unlike the Virtual DOM) it is not a complete representation of the
+entire DOM.</p></li> <li><p>It is also proven to be helpful with CSS scoping. The styles used in an
+application can overlap which makes it cumbersome to handle them.
+Shadow DOM ensures that the styles created inside a single Shadow
+DOM element remain isolated and within their own scope.</p></li></ul> <h2 id="_8-state-the-core-principles-of-redux"><a href="#_8-state-the-core-principles-of-redux" class="header-anchor">#</a> 8. State the core principles of Redux.</h2> <ul><li>The core principles of Redux are as follows:
+<ul><li><p><strong>Single source of truth:</strong> The global state of our application is    always put away in an object tree inside one store.</p></li> <li><p>The state is read-only: The only way to change the state of our application is by emitting an action, an object explaining what has happened.</p></li> <li><p>Changes are made with pure functions: This principle means that in
+order to define how the state tree is being transformed by the actions, we have to write pure reducers.</p></li> <li></li></ul></li></ul> <h2 id="_9-is-it-necessary-to-keep-all-the-component-states-in-the-redux-store"><a href="#_9-is-it-necessary-to-keep-all-the-component-states-in-the-redux-store" class="header-anchor">#</a> 9. Is it necessary to keep all the component states in the Redux store?</h2> <p>No, it is not necessary to keep all the component states in the Redux
+store. We have to keep your application state as small as possible and
+therefore, we should do it only if it makes a difference for us to keep
+something there or maybe if it makes the use of Dev Tools easier.</p> <h2 id="_10-what-do-you-understand-by-an-action-in-redux-s-architecture"><a href="#_10-what-do-you-understand-by-an-action-in-redux-s-architecture" class="header-anchor">#</a> 10.What do you understand by an action in Redux's architecture?</h2> <p>10.In the Redux architecture, actions are nothing but the plain JavaScript
+objects which contain a type field. They can be thought of as an event
+that is used to describe something which has happened in the
+application. Actions contain only a tiny bit of information that is required
+to mention what has happened.</p> <h2 id="_11-what-are-the-workflow-features-in-redux"><a href="#_11-what-are-the-workflow-features-in-redux" class="header-anchor">#</a> 11.What are the workflow features in Redux?</h2> <p>The workflow features in Redux are as follows:</p> <ul><li><strong>Reset:</strong> The state of the store is allowed to be reset.</li> <li><strong>Revert:</strong> Revert or Rollback to the last committed state is allowed.</li> <li><strong>Sweep:</strong> Every disabled action which we have fired unintentionally will be removed.</li> <li><strong>Commit:</strong> The current state is made the initial state.</li></ul> <h2 id="_12-give-an-example-of-the-usage-of-actions-in-redux-s-architecture"><a href="#_12-give-an-example-of-the-usage-of-actions-in-redux-s-architecture" class="header-anchor">#</a> 12. Give an example of the usage of Actions in Redux's architecture.</h2> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token keyword">const</span> addingTodoAction <span class="token operator">=</span> <span class="token punctuation">{</span>
+<span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'ADD'</span><span class="token punctuation">,</span>
+<span class="token literal-property property">payload</span><span class="token operator">:</span> <span class="token string">'Do-homework'</span>
+<span class="token punctuation">}</span>
+<span class="token literal-property property">Note</span> <span class="token operator">:</span> Example may vary but structure should be same<span class="token punctuation">.</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7c9659b3.js" defer></script><script src="/assets/js/2.687c71a6.js" defer></script><script src="/assets/js/1.fc8a768a.js" defer></script><script src="/assets/js/70.06f7562e.js" defer></script>
+  </body>
+</html>
